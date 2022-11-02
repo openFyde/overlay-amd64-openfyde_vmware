@@ -148,9 +148,7 @@ src_configure() {
 		gallium_enable video_cards_virgl virgl
 
 		# vmware virtual box support
-		if use video_cards_vmware; then
-			gallium_enable video_cards_vmware svga swrast
-		fi
+		gallium_enable video_cards_vmware svga swrast
 	fi
 
 	if use vulkan; then
