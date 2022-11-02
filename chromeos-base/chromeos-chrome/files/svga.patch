@@ -1,0 +1,33 @@
+diff --git a/gpu/command_buffer/service/feature_info.cc b/gpu/command_buffer/service/feature_info.cc
+index cc7acaff09ef1..fab7a7ca23d99 100644
+--- a/gpu/command_buffer/service/feature_info.cc
++++ b/gpu/command_buffer/service/feature_info.cc
+@@ -487,10 +487,12 @@ void FeatureInfo::InitializeFeatures() {
+ 
+   // Really it's part of core OpenGL 2.1 and up, but let's assume the
+   // extension is still advertised.
+-  bool has_pixel_buffers =
+-      gl_version_info_->is_es3 || gl_version_info_->is_desktop_core_profile ||
+-      gfx::HasExtension(extensions, "GL_ARB_pixel_buffer_object") ||
+-      gfx::HasExtension(extensions, "GL_NV_pixel_buffer_object");
++  /* bool has_pixel_buffers = */
++  /*     gl_version_info_->is_es3 || gl_version_info_->is_desktop_core_profile || */
++  /*     gfx::HasExtension(extensions, "GL_ARB_pixel_buffer_object") || */
++  /*     gfx::HasExtension(extensions, "GL_NV_pixel_buffer_object"); */
++
++  bool has_pixel_buffers = false;
+ 
+   // If ES3 or pixel buffer objects are enabled by the driver, we have to assume
+   // the unpack buffer binding may be changed on the underlying context. This is
+diff --git a/ui/ozone/platform/drm/common/drm_util.cc b/ui/ozone/platform/drm/common/drm_util.cc
+index 9bc3ecfbd7918..ab477d7773274 100644
+--- a/ui/ozone/platform/drm/common/drm_util.cc
++++ b/ui/ozone/platform/drm/common/drm_util.cc
+@@ -122,6 +122,7 @@ display::DisplayConnectionType GetDisplayType(drmModeConnector* connector) {
+     case DRM_MODE_CONNECTOR_DVIA:
+       return display::DISPLAY_CONNECTION_TYPE_DVI;
+     case DRM_MODE_CONNECTOR_VIRTUAL:
++      return display::DISPLAY_CONNECTION_TYPE_UNKNOWN;
+       // A display on VM is treated as an internal display.
+     case DRM_MODE_CONNECTOR_LVDS:
+     case DRM_MODE_CONNECTOR_eDP:
