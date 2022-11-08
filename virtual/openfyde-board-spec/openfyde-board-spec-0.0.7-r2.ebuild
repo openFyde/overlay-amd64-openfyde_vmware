@@ -25,6 +25,8 @@ RDEPEND="
     chromeos-base/fydeos-input-util
     chromeos-base/vga-switcher
     virtual/gentoo-extra-pkgs
+	dev-libs/libdnet
+	app-emulation/open-vm-tools
 "
 
 #    chromeos-base/intel-microcode
