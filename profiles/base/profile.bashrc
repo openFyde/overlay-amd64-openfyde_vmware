@@ -1,13 +1,13 @@
-vbox_openfyde_stack_bashrc() {
+amd64_openfyde_vmware_stack_bashrc() {
   local cfg 
 
-  cfgd="/mnt/host/source/src/overlays/overlay-vbox-openfyde/${CATEGORY}/${PN}"
+  cfgd="/mnt/host/source/src/overlays/overlay-amd64-openfyde_vmware/${CATEGORY}/${PN}"
   for cfg in ${PN} ${P} ${PF} ; do
     cfg="${cfgd}/${cfg}.bashrc"
     [[ -f ${cfg} ]] && . "${cfg}"
   done
 
-  export VBOX_OPENFYDE_BASHRC_FILEPATH="${cfgd}/files"
+  export AMD64_OPENFYDE_VMWARE_BASHRC_FILEPATH="${cfgd}/files"
 }
 
-vbox_openfyde_stack_bashrc
+amd64_openfyde_vmware_stack_bashrc

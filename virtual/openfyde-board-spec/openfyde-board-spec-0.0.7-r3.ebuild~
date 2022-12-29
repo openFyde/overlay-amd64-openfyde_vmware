@@ -12,6 +12,7 @@ KEYWORDS="*"
 IUSE="kernel-5_10"
 
 RDEPEND="
+	chromeos-base/device-appid
     chromeos-base/auto-expand-partition
 	chromeos-base/apple-touchpad-bcm5974
     chromeos-base/amd64-openfyde-spec

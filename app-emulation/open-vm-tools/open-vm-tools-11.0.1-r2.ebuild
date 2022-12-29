@@ -1,1 +1,0 @@
-open-vm-tools-11.0.1-r1.ebuild

@@ -1,16 +1,19 @@
 # Copyright (c) 2022 Fyde Innovations Limited and the openFyde Authors.
 # Distributed under the license specified in the root directory of this project.
 
-EAPI="5"
+EAPI="4"
 
 DESCRIPTION="empty project"
 HOMEPAGE="http://fydeos.com"
 
-LICENSE="BSD-Google"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="*"
-IUSE=""
+IUSE="kernel-5_10"
 
-RDEPEND=""
+RDEPEND="
+    virtual/fydemina
+    chromeos-base/chromeos-config-bsp
+"
 
 DEPEND="${RDEPEND}"
