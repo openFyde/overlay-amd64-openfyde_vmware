@@ -14,6 +14,7 @@ IUSE="kernel-5_10"
 RDEPEND="
     virtual/fydemina
     chromeos-base/chromeos-config-bsp
+    chromeos-base/chromeos-bsp-amd64-openfyde_vmware
 "
 
 DEPEND="${RDEPEND}"

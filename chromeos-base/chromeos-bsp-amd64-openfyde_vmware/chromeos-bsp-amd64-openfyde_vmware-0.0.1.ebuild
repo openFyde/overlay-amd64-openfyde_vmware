@@ -13,7 +13,22 @@ LICENSE="BSD-Google"
 SLOT="0"
 KEYWORDS="*"
 
-RDEPEND=""
+RDEPEND="
+	chromeos-base/device-appid
+	chromeos-base/auto-expand-partition
+	chromeos-base/apple-touchpad-bcm5974
+	sys-firmware/mssl1680-firmware
+	sys-apps/haveged
+	chromeos-base/fydeos-gestures-config
+	media-libs/lpe-support-topology
+	chromeos-base/intel-lpe-audio-config
+	chromeos-base/flash_player
+	chromeos-base/fydeos-input-util
+	chromeos-base/vga-switcher
+	virtual/gentoo-extra-pkgs
+	dev-libs/libdnet
+	app-emulation/open-vm-tools
+"
 
 DEPEND="${RDEPEND}"
 
