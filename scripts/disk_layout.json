@@ -23,8 +23,12 @@
       },
       {
         "num": 3,
-        "fs_size":"2700 MiB",
+        "fs_size":"2484 MiB",
         "size": "2724 MiB"
+      },
+      {
+        "num": 1,
+        "size": "4096 MiB"
       }
     ],
     "factory_install": [

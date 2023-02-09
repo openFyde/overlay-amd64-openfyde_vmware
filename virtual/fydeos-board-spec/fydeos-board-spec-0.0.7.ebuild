@@ -11,7 +11,7 @@ SLOT="0"
 KEYWORDS="*"
 
 RDEPEND="
-    virtual/openfyde-board-spec
+  chromeos-base/chromeos-bsp-amd64-openfyde_vmware
 "
 
 DEPEND="${RDEPEND}"

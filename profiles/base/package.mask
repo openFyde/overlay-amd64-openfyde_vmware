@@ -1,5 +1,0 @@
-sys-kernel/chromeos-kernel-4_14::chromiumos
-sys-kernel/chromeos-kernel-5_4::chromiumos
-media-libs/lpe-support-blacklist::chromiumos
-media-libs/minigbm::chromiumos
-media-libs/mesa-llvmpipe::chromiumos
