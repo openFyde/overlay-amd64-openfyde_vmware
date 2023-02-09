@@ -1,1 +1,0 @@
-amd64-openfyde-spec-0.0.1.ebuild
