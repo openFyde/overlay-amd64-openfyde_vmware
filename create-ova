@@ -4,7 +4,7 @@
 VMWARE_DISKLIB_PATH=~/vmware-vix-disklib-distrib
 OVFTOOL_PATH=~/ovftool/ovftool
 # ===========================
-#
+
 if [[ "$#" -ne 2 ]]; then
 	echo "usage: create-image.sh <path/to/chromiumos_test_image.bin> <result.ova>"
 	exit 1
