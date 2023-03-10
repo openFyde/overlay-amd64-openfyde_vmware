@@ -32,7 +32,7 @@ TARGET_FILE=$2
 DISK_FILE_NAME=__tmp_disk$RANDOM.vmdk
 
 echo Removing temp files that may exist...
-find . -name '__tmp_*.vm*' -delete
+find . -maxdepth 1 -name '__tmp_*.vm*' -delete
 
 echo Converting image to $DISK_FILE_NAME...
 qemu-img convert -O vmdk $1 $DISK_FILE_NAME
