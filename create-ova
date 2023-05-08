@@ -2,7 +2,7 @@
 
 # ==== Please configure =====
 VMWARE_DISKLIB_PATH=~/vmware-vix-disklib-distrib
-OVFTOOL_PATH=~/ovftool/ovftool
+OVFTOOL_PATH=/usr/bin
 # ===========================
 
 if [[ "$#" -ne 2 ]]; then
