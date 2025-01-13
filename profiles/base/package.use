@@ -3,3 +3,4 @@ media-libs/mesa egl gles2 shared-glapi
 chromeos-base/chromeos-fonts -internal
 #>=sys-apps/gptfdisk-1.0.1 -ncurses
 chromeos-base/chrome-binary-tests -vaapi
+chromeos-base/auto-expand-partition force
